@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_days_ui_practice/pages/home_page.dart';
 import 'package:flutter_30_days_ui_practice/pages/login_page.dart';
+import 'package:flutter_30_days_ui_practice/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -29,8 +30,8 @@ class _MyAppState extends State<MyApp> {
       // home: HomePage(),
       routes: {
         "/": (context) => LoginPage(),
-        "homepage": (context) => HomePage(),
-        "loginpage": (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
