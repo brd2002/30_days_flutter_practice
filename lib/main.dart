@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_30_days_ui_practice/home_page.dart';
+import 'package:flutter_30_days_ui_practice/pages/home_page.dart';
+import 'package:flutter_30_days_ui_practice/pages/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,16 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData(
+        // brightness: Brightness.dark,
+      ),
+      // home: HomePage(),
+      routes: {
+        "/": (context) => LoginPage(),
+        "homepage": (context) => HomePage(),
+        "loginpage": (context) => LoginPage(),
+      },
     );
   }
 }
