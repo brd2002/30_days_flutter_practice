@@ -4,6 +4,7 @@ import 'package:flutter_30_days_ui_practice/home_page.dart';
 void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
